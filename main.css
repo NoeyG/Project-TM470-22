@@ -10,6 +10,7 @@ body {
   body {
     font-family: Arial, Helvetica, sans-serif;
       color: #57697d;
+      background-color: white
   }
   
   /* (website with tips to rearrage the header into 3 sections)https://docs.generatepress.com/article/split-header-three-sections/ */
@@ -42,6 +43,8 @@ body {
     list-style-type: none;
     padding: 20px; 
   }
+  
+
   .button {
     background-color: #21568a;
     border: none;
@@ -68,7 +71,6 @@ body {
     float: left;
     padding: 20px;
     width: 70%;
-    background-color: #f1f1f1;
     height: 300px; /* only for demonstration, should be removed */
   }
   
