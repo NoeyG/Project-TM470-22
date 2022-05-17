@@ -33,7 +33,7 @@ body {
   /* Create two columns/boxes that floats next to each other */
   nav {
     float: left;
-    width: 20%;
+    width: max-content;
     background: #ffffff;
     padding: 20px;
   }
