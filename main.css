@@ -1,13 +1,5 @@
+
 body {
-    background-color: #ffffff;
-  }
-  
-  
-  /*{
-    box-sizing: border-box;
-  } */
-  
-  body {
     font-family: Arial, Helvetica, sans-serif;
       color: #57697d;
       background-color: white
@@ -15,37 +7,37 @@ body {
   
   /* (website with tips to rearrage the header into 3 sections)https://docs.generatepress.com/article/split-header-three-sections/ */
   /* Style the header */
-  header {
+header {
     background-color: #c7cdc0;
     background-size: contain;
-    background-repeat: no-repeat;
+   /* background-repeat: no-repeat; */
     background-position: left; 
     padding: 30px;
     text-align: center;
     font-family: Tahoma, sans-serif;
     font-size: 35px;
     color: #ffffff;
-    /*border-top: 10px solid #c7cdc0;
-    border-bottom: 10px solid #c7cdc0;*/
+    border-top: 10px solid #c7cdc0;
+    border-bottom: 10px solid #c7cdc0;
     border-radius: 8px;
   }
   
   /* Create two columns/boxes that floats next to each other */
-  nav {
+nav {
     float: left;
-    width: max-content;
+    width: 20%;
     background: #ffffff;
     padding: 20px;
   }
   
   /* Style the list inside the menu */
-  nav ul {
+nav ul {
     list-style-type: none;
     padding: 20px; 
-  }
+  } 
   
 
-  .button {
+.button {
     background-color: #21568a;
     border: none;
     border-radius: 8px;
@@ -59,33 +51,29 @@ body {
       
   }
   
-  .button:hover {background-color: #1d97bd}
+.button:hover {background-color: #1d97bd}
   
-  .button:active {
+.button:active {
     background-color: #c7cdc0;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
   
-  article {
+article {
     float: left;
     padding: 20px;
     width: 70%;
-    height: 300px; /* only for demonstration, should be removed */
+    height: 300px; 
   }
   
-  /* Clear floats after the columns */
-  section::after {
+   /* Clear floats after the columns */
+section::after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Style the footer */
-  footer {
-    /*position: fixed;
-    Padding: 10px 10px 10px 10px;
-    bottom:0;*/
+  } 
+
+footer {
     width: 100%;
     height: 20px;
     text-align:center;
@@ -96,9 +84,8 @@ body {
   }
   
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-  @media (max-width: 600px) {
-    nav, article {
+@media (max-width: 600px) {
+     nav, article {
       width: 100%;
-      height: auto;
+      height: auto;}
     }
-  }
