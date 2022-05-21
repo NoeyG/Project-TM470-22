@@ -15,12 +15,15 @@ header {
     padding: 30px;
     text-align: center;
     font-family: Tahoma, sans-serif;
-    font-size: 35px;
+    font-size: 24px;
     color: #ffffff;
     border-top: 10px solid #c7cdc0;
     border-bottom: 10px solid #c7cdc0;
     border-radius: 8px;
   }
+
+.anchor {width: 30%;
+  height: auto;}
   
   /* Create two columns/boxes that floats next to each other */
 nav {
