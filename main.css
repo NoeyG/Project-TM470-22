@@ -26,18 +26,18 @@ header {
   height: auto;}
   
   /* Create two columns/boxes that floats next to each other */
-nav {
-    float: left;
+/*nav {
+    float: center; 
     width: 20%;
     background: #ffffff;
     padding: 20px;
-  }
-  
-  /* Style the list inside the menu */
-nav ul {
+  } */
+
+/* Style the list inside the menu */
+/*nav ul {
     list-style-type: none;
     padding: 20px; 
-  } 
+  } */
   
 
 .button {
@@ -45,8 +45,8 @@ nav ul {
     border: none;
     border-radius: 8px;
     color: white;
-    Padding: 14px 40px;
-    width: 80px;
+    Padding: 1px 20px;
+    width: auto;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -61,20 +61,21 @@ nav ul {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
-  
+
 article {
     float: left;
     padding: 20px;
     width: 70%;
     height: 300px; 
+    font-size: 12px;
   }
   
    /* Clear floats after the columns */
-section::after {
+/*section::after {
     content: "";
     display: table;
     clear: both;
-  } 
+  } */
 
 footer {
     width: 100%;
@@ -86,8 +87,8 @@ footer {
     border-radius: 8px;
   }
   
-  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
+  /* Responsive layout */
+@media (max-width: Auto-flow) {
      nav, article {
       width: 100%;
       height: auto;}
