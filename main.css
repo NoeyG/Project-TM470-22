@@ -88,8 +88,8 @@ article {
   /*Styling for collapsible buttons */
 
   .collapsible {
-    background-color: #777;
-    color: white;
+    background-color: #21568a;
+    color: #ffffff;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -97,15 +97,18 @@ article {
     text-align: left;
     outline: none;
     font-size: 15px;
+    border-radius: 8px;
+    margin-top: 2px;
+   
   }
   
   .active, .collapsible:hover {
-    background-color: #555;
+    background-color: #1d97bd;
   }
   
   .collapsible:after {
     content: '\002B';
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -120,7 +123,7 @@ article {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
   }
 
 /* Styling for the footer */
@@ -133,6 +136,8 @@ footer {
     color: white;
     display: inline-block;
     border-radius: 8px;
+    margin-top: 10px;
+    
   }
   
   /* Responsive layout */
