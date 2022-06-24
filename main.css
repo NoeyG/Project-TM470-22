@@ -22,8 +22,8 @@ header {
     border-radius: 8px;
   }
 
-.anchor {width: 30%;
-  height: auto;}
+.anchor {width: 300px;
+  }
 
   nav{border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
@@ -31,6 +31,19 @@ header {
     padding-top: 0px;
     padding-bottom: 5px;
     
+  }
+  
+  .design {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+   
+  }
+  .continents {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
   }
 
   /* Create two columns/boxes that floats next to each other */
@@ -142,7 +155,7 @@ footer {
   
   /* Responsive layout */
 @media (max-width: Auto-flow) {
-     nav, article {
+     nav, article, buttons {
       width: 100%;
       height: auto;}
     }
