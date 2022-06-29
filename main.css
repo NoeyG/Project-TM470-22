@@ -45,6 +45,10 @@ header {
     gap: 8px;
 
   }
+  @media(max-width:800px) {
+    .continents {
+      flex-direction: column;
+    }
 
   /* Create two columns/boxes that floats next to each other */
 /*nav {
@@ -155,7 +159,7 @@ footer {
   
   /* Responsive layout */
 @media (max-width: Auto-flow) {
-     nav, article, buttons {
+     body, header, nav, article, buttons {
       width: 100%;
       height: auto;}
     }
