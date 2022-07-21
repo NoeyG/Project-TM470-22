@@ -1,183 +1,200 @@
 
+/* Style the body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-      color: #57697d;
-      background-color: white
+  font-family: Arial, Helvetica, sans-serif;
+  color: #57697d;
+  background-color: white;
+  width:100%;
   }
   
-  /* (website with tips to rearrage the header into 3 sections)https://docs.generatepress.com/article/split-header-three-sections/ */
   /* Style the header */
 header {
-    background-color: #c7cdc0;
-    background-size: contain;
-   /* background-repeat: no-repeat; */
-    background-position: left; 
-    padding: 30px;
-    text-align: center;
-    font-family: Tahoma, sans-serif;
-    font-size: 24px;
-    color: #ffffff;
-    border-top: 10px solid #c7cdc0;
-    border-bottom: 10px solid #c7cdc0;
-    border-radius: 8px 8px 0px 0px;
+  
+  background-color: #c7cdc0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left; 
+  padding: 30px;
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  border-top: 10px solid #c7cdc0;
+  border-bottom: 10px solid #c7cdc0;
+  border-radius: 8px 8px 0px 0px;
+  
     
   }
-
-.anchor {width: 300px;
+/* style img anchor*/
+.anchor {
+  width: 300px;
   }
-
-  .euro{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    
-
-  }
-
-  nav{
-    
-    background-color: #c7cdc0;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    border-radius: 0px 0px 8px 8px.;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
+/* style img on Europe Page*/
+.euro{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
   }
   
-  .design {
-    display: flex;
-    align-items: center;
-    justify-content: left;
+
+/*stle nav*/
+nav{
+  background-color: #c7cdc0;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0px 0px 8px 8px.;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*trying responsive design techniques*/
+  /*display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+    */
+  }
+  /*style flexbox - design*/
+.design {
+  
+  display: flex;
+  align-items: center;
+  justify-content: left;
    
   }
-  .continents {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+.continents {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 
   }
 
- /* greyed due to conflict with collapsible menu not sue why */ 
- /* @media(max-width:800px) {
-    .continents {
-      flex-direction: column;
-    }*/
+/* greyed due to conflict with collapsible menu not sue why */ 
+/* @media(max-width:800px) {
+.continents {
+  flex-direction: column;
+  }*/
 
-  /* Create two columns/boxes that floats next to each other */
+/* Create two columns/boxes that floats next to each other */
 /*nav {
-    float: center; 
-    width: 20%;
-    background: #ffffff;
-    padding: 20px;
+  float: center; 
+  width: 20%;
+  background: #ffffff;
+  padding: 20px;
   } */
 
 /* Style the list inside the menu */
 /*nav ul {
-    list-style-type: none;
-    padding: 20px; 
-  } */
-  
+  list-style-type: none;
+  padding: 20px; 
+  } */ 
 
+/*Stye of buttons*/
 .button {
-    background-color: #21568a;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    Padding: 1px 20px;
-    width: auto;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-      
+  background-color: #21568a;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  Padding: 1px 20px;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;    
   }
   
-.button:hover {background-color: #1d97bd}
+.button:hover {
+  background-color: #1d97bd
+}
   
 .button:active {
-    background-color: #c7cdc0;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  background-color: #c7cdc0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
   }
 
 article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    height: 300px; 
-    font-size: 12px;
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 300px; 
+  font-size: 12px;
   }
   
-   /* Clear floats after the columns */
-/*section::after {
-    content: "";
-    display: table;
-    clear: both;
-  } */
+/*Styling for collapsible buttons */
 
-  /*Styling for collapsible buttons */
-
-  .collapsible {
-    background-color: #21568a;
-    color: #ffffff;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    border-radius: 8px;
-    margin-top: 2px;
+.collapsible {
+  background-color: #21568a;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-top: 2px;
    
   }
   
-  .active, .collapsible:hover {
-    background-color: #1d97bd;
+.active, .collapsible:hover {
+  background-color: #1d97bd;
   }
   
-  .collapsible:after {
-    content: '\002B';
-    color: #ffffff;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+.collapsible:after {
+  content: '\002B';
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
   }
   
-  .active:after {
-    content: "\2212";
+.active:after {
+  content: "\2212";
   }
   
-  .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: scroll;
-    transition: max-height 0.2s ease-out;
-    background-color: #ffffff;
-    margin-bottom: 2px;
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: scroll;
+  transition: max-height 0.2s ease-out;
+  background-color: #ffffff;
+  margin-bottom: 2px;
   }
 
 /* Styling for the footer */
-
 footer {
-    width: 100%;
-    height: 20px;
-    text-align:center;
-    background-color: #c7cdc0;
-    color: white;
-    display: inline-block;
-    border-radius: 8px;
-    margin-top: 10px;
+  width: 100%;
+  height: 20px;
+  text-align:center;
+  background-color: #c7cdc0;
+  color: white;
+  display: inline-block;
+  border-radius: 8px;
+  margin-top: 10px;
     
   }
-  
-  /* Responsive layout */
-@media (max-width: Auto-flow) {
-     body {
+
+@media screen and (max-width: 500px) {
+  .design {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+  .continents {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+/* Responsive layout */
+/*@media (max-width: Auto-flow) {
+  body {
       width: 100%;
       height: auto;}
     }
+
