@@ -19,17 +19,32 @@ header {
     color: #ffffff;
     border-top: 10px solid #c7cdc0;
     border-bottom: 10px solid #c7cdc0;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
+    
   }
 
 .anchor {width: 300px;
   }
 
-  nav{border-top: 1px solid #ffffff;
+  .euro{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    
+
+  }
+
+  nav{
+    
+    background-color: #c7cdc0;
+    border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
-    border-radius: 0px;
-    padding-top: 0px;
-    padding-bottom: 5px;
+    border-radius: 0px 0px 8px 8px.;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
   }
   
@@ -45,10 +60,12 @@ header {
     gap: 8px;
 
   }
-  @media(max-width:800px) {
+
+ /* greyed due to conflict with collapsible menu not sue why */ 
+ /* @media(max-width:800px) {
     .continents {
       flex-direction: column;
-    }
+    }*/
 
   /* Create two columns/boxes that floats next to each other */
 /*nav {
@@ -138,9 +155,10 @@ article {
   .content {
     padding: 0 18px;
     max-height: 0;
-    overflow: hidden;
+    overflow: scroll;
     transition: max-height 0.2s ease-out;
     background-color: #ffffff;
+    margin-bottom: 2px;
   }
 
 /* Styling for the footer */
@@ -159,7 +177,7 @@ footer {
   
   /* Responsive layout */
 @media (max-width: Auto-flow) {
-     body, header, nav, article, buttons {
+     body {
       width: 100%;
       height: auto;}
     }
