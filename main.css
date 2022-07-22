@@ -48,13 +48,7 @@ nav{
   border-radius: 0px 0px 8px 8px.;
   padding-top: 10px;
   padding-bottom: 10px;
-  /*trying responsive design techniques*/
-  /*display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-    */
+  
   }
   /*style flexbox - design*/
 .design {
@@ -181,20 +175,36 @@ footer {
 @media screen and (max-width: 500px) {
   .design {
       float: none;
-      display: block;
-      text-align: left;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: 10px;
     }
 
   .continents {
       float: none;
       display: block;
-      text-align: left;
-    }
-}
-/* Responsive layout */
-/*@media (max-width: Auto-flow) {
-  body {
-      width: 100%;
-      height: auto;}
-    }
+      text-align: center;
+      border-radius: 8px;
+      color: white;
 
+
+    }
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .anchor{
+    height: 75px;
+    width: auto;
+  }
+  h2{
+    height: fit-content;
+    font-size:20px;
+  }
+}
