@@ -41,11 +41,11 @@ header {
   
 
 /*stle nav*/
-nav{
+nav {
   background-color: #c7cdc0;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
-  border-radius: 0px 0px 8px 8px.;
+  border-radius: 0px 0px 8px 8px;
   padding-top: 10px;
   padding-bottom: 10px;
   
@@ -208,3 +208,47 @@ footer {
     font-size:20px;
   }
 }
+
+/*start of hamburger menu */
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+/*end of hamburger menu */
