@@ -14,48 +14,38 @@
     
     <body>   
 <Header>
-    <div Class="design">
-      <div>
-    <img class="anchor" src="./Links-Images/The_Seafarer_Port_Guide.png" > 
-  </div>
-  <div>
-    <h2>The Seafarers Port Guide</h2>
-  </div>
-</div>
+    <div class="design">   
+        <img class="anchor" src="./Links-Images/The_Seafarer_Port_Guide.png" > 
+     
+        <h2>The Seafarers Port Guide</h2>
+     
+   
+
 <!-- trying Hamburg menu -->
-<div class="topnav">
+
+  <div class="topnav">
   
-  <div Class="design">
-    
-      <a href="./index.html" class="active">
-      <img class="anchor" src="./Links-Images/The_Seafarer_Port_Guide.png">Select Port</a> 
-</div>
+    <a href="./index.html" class="active">Select Port</a> 
   <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <div class="continents">
+    <div id="myLinks">
         <a href="index.html" class="button">Home</a>
-        <a href="./Pages/europe.html"class="button">EUROPE</a> 
-        <a href="./Pages/north_america.html"class="button">NORTH AMERICA</a>
-        <a href="./Pages/asia.html"class="button">ASIA</a> 
-        <a href="./Pages/africa.html"class="button">AFRICA</a> 
-      </div>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="./Pages/europe.html" class="button">EUROPE</a> 
+        <a href="./Pages/north_america.html" class="button">NORTH AMERICA</a>
+        <a href="./Pages/asia.html" class="button">ASIA</a> 
+        <a href="./Pages/africa.html" class="button">AFRICA</a> 
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
-  </a>
+    </a>
+
 </div>
+</div>
+</Header>
 <!-- end of hamburger menu -->
 
-</Header> 
-  <nav>
-      
-    
-      </nav>
-      
-        
+
   
-<br>
 <main>
 <div>
     <h1>Welcome to the Seafarers Port Guide</h1>
@@ -78,6 +68,8 @@
   </div>
   
   <script>
+
+  // collapsible menu javascript layout
   var coll = document.getElementsByClassName("collapsible");
   var i;
   
@@ -92,8 +84,9 @@
       } 
     });
   }
+  // Hamburger link javascript layout 
 
-  function myFunction() {
+function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
@@ -101,11 +94,11 @@
     x.style.display = "block";
   }
 }
-  </script>
+</script>
 </main>
-  </body>
-  <div>
-<footer>Created & Maintained by Noelle Gordon</footer>
+</body>
+<div>
+  <footer>Created & Maintained by Noelle Gordon</footer>
 </div>
 </html>
 

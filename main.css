@@ -7,7 +7,7 @@ body {
   width:100%;
   }
   
-  /* Style the header */
+/* Style the header */
 header {
   
   background-color: #c7cdc0;
@@ -40,7 +40,6 @@ header {
   border-radius: 8px;
   }
   
-
 /*stle nav*/
 nav {
   background-color: #c7cdc0;
@@ -66,31 +65,12 @@ nav {
 
   }
 
-/* greyed due to conflict with collapsible menu not sue why */ 
-/* @media(max-width:800px) {
-.continents {
-  flex-direction: column;
-  }*/
-
-/* Create two columns/boxes that floats next to each other */
-/*nav {
-  float: center; 
-  width: 20%;
-  background: #ffffff;
-  padding: 20px;
-  } */
-
-/* Style the list inside the menu */
-/*nav ul {
-  list-style-type: none;
-  padding: 20px; 
-  } */ 
-
 /*Stye of buttons*/
 .button {
   background-color: #21568a;
-  border: none;
+  border: 8px;
   border-radius: 8px;
+  margin: 8px;
   color: white;
   Padding: 1px 20px;
   width: auto;
@@ -170,24 +150,26 @@ footer {
   display: inline-block;
   border-radius: 8px;
   margin-top: 10px;
-    
-  }
-
+}
+  /*Reposnsive Design */
 @media screen and (max-width: 500px) {
+
+  nav{
+   display: flex;
+   text-align: center;
+   justify-content: right;
+  }
   .design {
       float: none;
       display: flex;
-      text-align: center;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
+      text-align: center;
       height: 10px;
     }
 
-.topnav {
-  
-}
-
-.continents {
+  .continents {
       float: none;
       display: block;
       text-align: center;
@@ -197,9 +179,6 @@ footer {
 
     }
   .button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 2px;
     height: 40px;
     font-size: 20px;
@@ -214,17 +193,22 @@ footer {
   }
 }
 
-/*start of hamburger menu */
-/* Style the navigation menu */
+/* Style the navigation menu start of hamburger menu*/
+
+
 .topnav {
   overflow: hidden;
-  background-color: #333;
-  position: relative;
+  background-color: #ffffff;
+  position:relative;
+  border-radius: 8px;
+  
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
+  background-color: #ffffff;
+
 }
 
 /* Style navigation menu links */
@@ -234,6 +218,7 @@ footer {
   text-decoration: none;
   font-size: 17px;
   display: block;
+  
 }
 
 /* Style the hamburger menu */
@@ -248,12 +233,13 @@ footer {
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #21568a;
 }
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #04AA6D;
+  background-color: #21568a;
   color: white;
+  
 }
 /*end of hamburger menu */
