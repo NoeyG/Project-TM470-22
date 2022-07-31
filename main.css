@@ -27,7 +27,8 @@ header {
   }
 /* style img anchor*/
 .anchor {
-  width: 300px;
+  width: 100px;
+  height: auto;
   }
 /* style img on Europe Page*/
 .euro{
@@ -52,7 +53,7 @@ nav {
   }
   /*style flexbox - design*/
 .design {
-  
+
   display: flex;
   align-items: center;
   justify-content: left;
@@ -182,7 +183,11 @@ footer {
       height: 10px;
     }
 
-  .continents {
+.topnav {
+  
+}
+
+.continents {
       float: none;
       display: block;
       text-align: center;
