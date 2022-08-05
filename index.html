@@ -3,49 +3,48 @@
 <html lang="en">
 
     
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="main.css">   
-      <!--reference link hamburg menu -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-      <title>The Seafarers Port Guide </title>
-    </head>
-    
-    <body>   
-<Header>
-    <div class="design">   
-        <img class="anchor" src="./Links-Images/The_Seafarer_Port_Guide.png" > 
-     
-        <h2>The Seafarers Port Guide</h2>
-     
-   
-
-<!-- trying Hamburg menu -->
-
-  <div class="topnav">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">   
+  <title>The Seafarers Port Guide </title>
+</head>
+<body>      
   
-    <a href="./index.html" class="active">Select Port</a> 
-  <!-- Navigation links (hidden by default) -->
-    <div id="myLinks">
-        <a href="index.html" class="button">Home</a>
-        <a href="./Pages/europe.html" class="button">EUROPE</a> 
-        <a href="./Pages/north_america.html" class="button">NORTH AMERICA</a>
-        <a href="./Pages/asia.html" class="button">ASIA</a> 
-        <a href="./Pages/africa.html" class="button">AFRICA</a> 
-    </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-    </a>
+<header>
+  <div>
+    <img class="anchor" src="./Links-Images/The_Seafarer_Port_Guide.png" > 
+  </div>
+  <div>
+    <h2>The Seafarers Port Guide</h2>  
+  </div>
+</header>
 
-</div>
-</div>
-</Header>
-<!-- end of hamburger menu -->
+<nav id="main-menu">
+        <ul>
+          <li><a href="index.html" class="button">Home</a></li>
+          <li><a href="./Pages/africa.html" class="button">Africa</a></li>
+          <li><a href="./Pages/asia.html" class="button">Asia</a> </li>
+          <li><a href="./Pages/europe.html" class="button">Europe</a> </li>
+          <li><a href="./Pages/north_america.html" class="button">North America</a></li>
+        </ul>
+</nav>
+      
+<input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="./Pages/africa.html" >Africa</a></li>
+            <li><a href="./Pages/asia.html" >Asia</a> </li>
+            <li><a href="./Pages/europe.html" >Europe</a> </li>
+            <li><a href="./Pages/north_america.html" >North America</a></li>
+          </ul>
+        </nav>
+      </label>
+  <div class="overlay"></div>
 
-
-  
 <main>
 <div>
     <h1>Welcome to the Seafarers Port Guide</h1>
@@ -84,16 +83,7 @@
       } 
     });
   }
-  // Hamburger link javascript layout 
-
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+ 
 </script>
 </main>
 </body>

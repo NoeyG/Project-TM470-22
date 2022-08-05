@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
 /* Style the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -15,19 +17,20 @@ header {
   background-repeat: no-repeat;
   background-position: left; 
   padding: 30px;
-  text-align: center;
+  height: 25px;
   font-family: Tahoma, sans-serif;
   font-size: 24px;
   color: #ffffff;
   border-top: 10px solid #c7cdc0;
   border-bottom: 10px solid #c7cdc0;
   border-radius: 8px 8px 0px 0px;
-  
-    
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   }
 /* style img anchor*/
 .anchor {
-  width: 100px;
+  width: 150px;
   height: auto;
   }
 /* style img on Europe Page*/
@@ -41,23 +44,26 @@ header {
   }
   
 /*stle nav*/
+
 nav {
   background-color: #c7cdc0;
-  border-top: 1px solid #ffffff;
-  border-bottom: 1px solid #ffffff;
-  border-radius: 0px 0px 8px 8px;
+  border-top: 1px solid #57697d;
+  border-bottom: 1px solid #57697d;
   padding-top: 10px;
   padding-bottom: 10px;
-  
+  position: sticky;
+  top: 20px;
   }
+
   /*style flexbox - design*/
-.design {
+/* .design {
 
   display: flex;
   align-items: center;
   justify-content: left;
    
   }
+  */
 .continents {
   display: flex;
   justify-content: center;
@@ -77,7 +83,7 @@ nav {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;    
+  font-size: 10px;    
   }
   
 .button:hover {
@@ -112,7 +118,6 @@ article {
   font-size: 15px;
   border-radius: 8px;
   margin-top: 2px;
-   
   }
   
 .active, .collapsible:hover {
@@ -147,23 +152,24 @@ footer {
   text-align:center;
   background-color: #c7cdc0;
   color: white;
-  display: inline-block;
-  border-radius: 8px;
+  border-color: #57697d;
+  border-radius: 0px 0px 8px 8px;
   margin-top: 10px;
 }
   /*Reposnsive Design */
 @media screen and (max-width: 500px) {
 
-  nav{
+ /* nav{
    display: flex;
    text-align: center;
    justify-content: right;
   }
+  */
   .design {
       float: none;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content:space-between;
       align-items: center;
       text-align: center;
       height: 10px;
@@ -175,8 +181,6 @@ footer {
       text-align: center;
       border-radius: 8px;
       color: white;
-
-
     }
   .button{
     margin: 2px;
@@ -186,6 +190,11 @@ footer {
   .anchor{
     height: 75px;
     width: auto;
+    padding-left: 30px;
+  }
+  .euro{
+    height: auto;
+    width: 100%;
   }
   h2{
     height: fit-content;
@@ -194,52 +203,144 @@ footer {
 }
 
 /* Style the navigation menu start of hamburger menu*/
-
-
-.topnav {
-  overflow: hidden;
-  background-color: #ffffff;
-  position:relative;
-  border-radius: 8px;
-  
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+/*
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  min-height: 200vh;
+  font-family: 'Cabin', Sans-serif;
+}
+*/
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-  background-color: #ffffff;
-
+#main-menu {
+  display: block;
+  height: 75px;
+  width: 100%;
+  background: #c7cdc0;
+  margin: 0px;  
+  z-index: 9;
 }
 
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 14px 16px;
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+
+#main-menu li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+#main-menu a {
+  color: #ffffff;
+  font-size: 1.5rem;
   text-decoration: none;
-  font-size: 17px;
-  display: block;
-  
 }
 
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+#main-menu a:hover {
+  text-decoration: underline;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: #21568a;
+#hamburger-input{
+  display: none;
 }
 
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #21568a;
-  color: white;
-  
+#hamburger-menu {
+    position: fixed;
+    top: 35px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(
+      to bottom, 
+      #21568a, #21568a 20%, 
+      #c7cdc0 20%, #c7cdc0 40%, 
+      #21568a 40%, #21568a 60%, 
+      #c7cdc0 60%, #c7cdc0 80%, 
+      #21568a 80%, #21568a 100%
+    );
 }
-/*end of hamburger menu */
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #1d97bd;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+  color: #ffffff;
+  font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu a {
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+    opacity: 0.4;
+}
+
+
+@media screen and (max-width: 750px) {
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
+}
+
