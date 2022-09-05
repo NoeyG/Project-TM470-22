@@ -25,8 +25,9 @@ header {
   border-bottom: 10px solid #c7cdc0;
   border-radius: 8px 8px 0px 0px;
   display: flex;
+  flex-grow: 1;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   }
 /* style img anchor*/
 .anchor {
